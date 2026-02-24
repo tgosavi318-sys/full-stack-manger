@@ -13,7 +13,7 @@ mongoose.connection.once("open", () => {
     console.log("db connected")
     app.listen(process.env.PORT, () => {
         console.log("SERVER RUNNING")
-        console.log(`mode:${}`);
+        console.log(`mode:${process.env.NODE_ENV}`);
 
 
     })
